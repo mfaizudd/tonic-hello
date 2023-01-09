@@ -1,0 +1,15 @@
+[package]
+name = "tonic-hello"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+prost = "0.11"
+tokio = { version = "1.23", features = ["rt-multi-thread", "macros"] }
+tonic = "0.8"
+tonic-reflection = "0.6"
+
+[build-dependencies]
+tonic-build = "0.8"
